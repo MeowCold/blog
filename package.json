@@ -16,7 +16,7 @@
     "generate": "hexo clean && hexo g",
     "sync": "yuque-hexo sync",
     "clean:yuque": "yuque-hexo clean",
-    "deploy": "npm run sync && hexo clean && hexo g -d"
+    "deploy": "npm run sync && hexo deloy"
   },
   "dependencies": {
     "hexo": "^3.8.0",

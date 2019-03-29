@@ -1,20 +1,20 @@
 language: node_js
-sudo: false
+sudo: true
 node_js:
 - '8'
 cache:
   directories:
-    - node_modules
+  - node_modules
 branches:
   only:
   - master
 before_install:
 - openssl aes-256-cbc -K $encrypted_6f885a4e991a_key -iv $encrypted_6f885a4e991a_iv
-  -in .travis/id_rsa.enc -out ~/.ssh/id_rsa -d
-- chmod 600 ~/.ssh/id_rsa
+  -in id_rsa.enc -out ~/.ssh_blog/id_rsa -d
+- chmod 600 ~/.ssh_blog/id_rsa
 - eval $(ssh-agent)
-- ssh-add ~/.ssh/id_rsa
-- cp .travis/ssh_config ~/.ssh/config
+- ssh-add ~/.ssh_blog/id_rsa
+- cp .travis/ssh_config ~/.ssh_blog/config
 - git config --global user.name 'leekachung'
 - git config --global user.email 'ljc970910@163.com'
 install:
@@ -24,6 +24,5 @@ install:
 script:
 - hexo clean
 - hexo g
-
 after_success:
 - hexo deploy

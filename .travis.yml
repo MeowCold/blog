@@ -10,11 +10,11 @@ branches:
   - master
 before_install:
 - openssl aes-256-cbc -K $encrypted_6f885a4e991a_key -iv $encrypted_6f885a4e991a_iv
-  -in .travis/id_rsa.enc -out ~/.ssh_blog/id_rsa -d
-- chmod 600 ~/.ssh_blog/id_rsa
+  -in .travis/id_rsa1.enc -out ~/.ssh/id_rsa1 -d
+- chmod 600 ~/.ssh/id_rsa1
 - eval $(ssh-agent)
-- ssh-add ~/.ssh_blog/id_rsa
-- cp .travis/ssh_config ~/.ssh_blog/config
+- ssh-add ~/.ssh/id_rsa1
+- cp .travis/ssh_config ~/.ssh/config
 - git config --global user.name 'leekachung'
 - git config --global user.email 'ljc970910@163.com'
 install:

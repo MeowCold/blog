@@ -7,7 +7,7 @@
   },
   "yuqueConfig": {
     "baseUrl": "https://www.yuque.com/api/v2",
-    "login": "leekachung",
+    "login": "likachung",
     "repo": "li_blog",
     "mdNameFormat": "title",
     "postPath": "source/_posts/yuque"

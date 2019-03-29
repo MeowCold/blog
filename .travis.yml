@@ -13,9 +13,11 @@ before_install:
 - ssh-add ~/.ssh/id_rsa
 - cp .travis/ssh_config ~/.ssh/config
 - git config --global user.name 'leekachung'
-- git config --global user.email 'ljc970910@163.com'
+- git config --global user.email 'leekachung17@gmail.com'
 install:
 - npm install hexo-cli -g
+- npm install --save hexo-deployer-git
+- npm install --save-dev hexo-util
 - npm install -g yuque-hexo
 - npm install
 script:

@@ -19,7 +19,7 @@ permalink: :year/:month/:day/:title/
 permalink_defaults:
 
 # Directory
-source_dir: source
+source_dir: source/yuque
 public_dir: public
 tag_dir: tags
 archive_dir: archives

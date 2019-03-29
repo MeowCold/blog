@@ -80,4 +80,4 @@ theme: landscape
 deploy:
   type: git
   repo: git@github.com:leekachung/leekachung.github.io.git
-  branch: page
+  branch: gh-pages

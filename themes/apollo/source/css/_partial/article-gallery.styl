@@ -1,0 +1,23 @@
+.article-gallery
+  background: #000
+  position: relative
+  margin-bottom: 20px
+  cursor: pionter
+
+.article-gallery-photos
+  position: relative
+  overflow: hidden
+
+.article-gallery-img
+  display: none
+  max-width: 100%
+  cursor: pionter
+  &:first-child
+    display: block
+  &.loaded
+    position: absolute
+    display: block
+  img
+    display: block
+    max-width: 100%
+    margin: 0 auto

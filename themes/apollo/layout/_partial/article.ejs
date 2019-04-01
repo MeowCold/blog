@@ -36,7 +36,7 @@
     <%- partial('post/nav') %>
   <% } %>
   <% if (page.type === "tags") { %>
-<div class="tag-cloud">
+	<div class="tag-cloud">
 	<div class="tag-cloud-tags">
 	<%- tagcloud({
 		min_font: 16,
@@ -52,10 +52,4 @@
 </article>
 <% if (index){ %>
 	<hr class="article-devider">
-<% } %>
-
-<% if (!index){ %>
-<% if (page.type != "tags") { %>
-	<div id="comment"></div>
-<% } %>
 <% } %>

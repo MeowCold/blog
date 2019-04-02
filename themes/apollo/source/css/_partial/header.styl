@@ -33,13 +33,29 @@
   display: none
   padding: 15px 0 0
   cursor: pionter
-  .icon-reorder
-    cursor: pointer
-    display: inline-block
-    width: 18px
-    height: 17px
-    background: url('/images/icon-reorder@2x.png') no-repeat 0 0
-    background-size: 18px 17px
+  margin: 10px 0
+  font-size: 85%
+  text-transform: uppercase
+  position: relative
+  cursor: pionter
+  ul
+    display: block
+    *zoom: 1
+    margin: 0
+    padding: 0
+    &:after
+      display: block
+      visibility: hidden
+      font-size: 0
+      height: 0;
+      clear: both
+      content: "."
+  li
+    float: left
+    margin: .3em 0 .3em 2em
+    img
+      vertical-align: middle
+
 
 .nav
   margin: 10px 0

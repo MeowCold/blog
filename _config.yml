@@ -4,10 +4,10 @@
 
 # Site
 title: Li
-subtitle:
-description:
-keywords:
-author: Likachung
+subtitle: leekachung's blog
+description: php|go|互联网|Internet|docker|swoole|vue|share|分享|星空us
+keywords: php|go|互联网|Internet|docker|swoole|vue|share|分享|星空us
+author: leekachung
 language:
 timezone:
 
@@ -83,7 +83,7 @@ baidusitemap:
   path: baidusitemap.xml
 
 # 优化网址
-permalink: archives/:abbrlink.html
+permalink: posts/:abbrlink/
 abbrlink:
   alg: crc32
   rep: hex

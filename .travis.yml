@@ -20,6 +20,7 @@ install:
 - npm install --save-dev hexo-util
 - npm install -g yuque-hexo
 - npm install hexo-generator-sitemap --save
+- npm install hexo-generator-baidusitemap --save
 - npm install hexo-abbrlink --save
 - npm install
 script:

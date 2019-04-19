@@ -16,9 +16,9 @@ timezone:
 url: http://lkc.im
 root: / 
 # 优化网址
-permalink: archives/:abbrlink/
+permalink: archives/:abbrlink.html
 abbrlink:
-  alg: crc32
+  alg: crc16
   rep: hex
 permalink_defaults:
 

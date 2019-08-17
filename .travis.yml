@@ -28,6 +28,6 @@ install:
 - npm install hexo-abbrlink --save
 - npm install
 after_success:
-
+- ssh -tt root@216.83.44.218 'cd ~/web/www/site && git pull'
 script:
 - npm run deploy

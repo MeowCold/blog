@@ -5,9 +5,6 @@
 	<nav class="nav">
 		<ul>
 			<% for (var i in theme.menu){ %><li><a href="<%- theme.menu[i] %>"><%= i %></a></li><% } %>
-			<% if (theme.local_search.enable) { %>
-            		<li><%- partial('_partial/search') %>
-      			</li><% } %>
 		</ul>
 	</nav>
 </header>

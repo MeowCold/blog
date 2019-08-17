@@ -79,6 +79,13 @@ pagination_dir: page
 ## Themes: https://hexo.io/themes/
 theme: lkc
 
+# Search
+search:
+  path: search.json
+  zipPath: search.zip
+  versionPath: searchVersion.txt
+  field: post
+
 # SEO
 sitemap:
   path: sitemap.xml

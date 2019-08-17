@@ -11,8 +11,8 @@ common:
     post:
         one: 'Post'
         other: 'Posts'
-    prev: 'prev'
-    next: 'next'
+    prev: 'Prev'
+    next: 'Next'
 widget:
     follow: 'Follow'
     recents: 'Recent'
@@ -45,3 +45,5 @@ insight:
     categories: 'Categories'
     tags: 'Tags'
     untitled: '(Untitled)'
+about:
+    about: 'About'

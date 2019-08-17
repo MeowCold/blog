@@ -3,7 +3,7 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Li
+title: Li Kachung
 subtitle: leekachung's blog
 description: php|go|互联网|Internet|docker|swoole|vue|share|分享|星空us|leekachung|likachung
 keywords: php|go|互联网|Internet|docker|swoole|vue|share|分享|星空us
@@ -77,16 +77,7 @@ pagination_dir: page
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: lkc
-
-markdown: 'commonmark'
-
-# Search
-search:
-  path: search.json
-  zipPath: search.zip
-  versionPath: searchVersion.txt
-  field: post
+theme: icarus
 
 # SEO
 sitemap:

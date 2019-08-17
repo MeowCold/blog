@@ -5,10 +5,10 @@
 # Site
 title: Li Kachung
 subtitle: leekachung's blog
-description: php|go|互联网|Internet|docker|swoole|vue|share|分享|星空us|leekachung|likachung
-keywords: php|go|互联网|Internet|docker|swoole|vue|share|分享|星空us
+description: php|go|golang|互联网|Internet|docker|k8s|opensource|分享|星空us|leekachung|likachung
+keywords: php|go|golang|互联网|Internet|docker|k8s|opensource|分享|星空us
 author: leekachung
-language:
+language: en
 timezone:
 
 # URL

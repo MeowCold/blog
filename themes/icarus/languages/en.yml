@@ -11,8 +11,8 @@ common:
     post:
         one: 'Post'
         other: 'Posts'
-    prev: 'Previous'
-    next: 'Next'
+    prev: 'prev'
+    next: 'next'
 widget:
     follow: 'Follow'
     recents: 'Recent'

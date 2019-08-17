@@ -79,6 +79,8 @@ pagination_dir: page
 ## Themes: https://hexo.io/themes/
 theme: lkc
 
+markdown: 'commonmark'
+
 # Search
 search:
   path: search.json

@@ -90,6 +90,5 @@ baidusitemap:
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: 
-    github: git@github.com:leekachung/blog.git,gh-pages
+  repo:
     root: root@216.83.44.218:/root/web/www/hexo

@@ -6,12 +6,10 @@ branches:
   only:
   - master
 before_install:
+# - openssl aes-256-cbc -K $encrypted_6f885a4e991a_key -iv $encrypted_6f885a4e991a_iv
+#  -in ./.travis/id_rsa.enc -out ~/.ssh/id_rsa -d
 - openssl aes-256-cbc -K $encrypted_7402310d7b21_key -iv $encrypted_7402310d7b21_iv
-  -in id_rsa.enc -out ~/.ssh/id_rsa -d
-- chmod 600 ~/.ssh/id_rsa
-- echo -e "Host 216.83.44.218\n\tStrictHostKeyChecking no\n" >> ~/.ssh/config
-- openssl aes-256-cbc -K $encrypted_6f885a4e991a_key -iv $encrypted_6f885a4e991a_iv
-  -in ./.travis/id_rsa.enc -out ~/.ssh/id_rsa -d
+  -in travis.blog.key.enc -out ~/.ssh/id_rsa -d
 - chmod 600 ~/.ssh/id_rsa
 - eval $(ssh-agent)
 - ssh-add ~/.ssh/id_rsa
@@ -27,7 +25,5 @@ install:
 - npm install hexo-generator-baidu-sitemap --save
 - npm install hexo-abbrlink --save
 - npm install
-after_success:
-- ssh -tt root@216.83.44.218 'cd ~/web/www/site && git pull'
 script:
 - npm run deploy

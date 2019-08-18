@@ -37,6 +37,9 @@ footer:
         My GitHub:
             icon: fab fa-github
             url: 'https://github.com/leekachung'
+        My Email:
+            icon: fas fa-reply
+            url: 'mailto:leekachung17@gmail.com'
 # Article display settings
 article:
     # Code highlight settings

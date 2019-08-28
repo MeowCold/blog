@@ -86,9 +86,20 @@ sitemap:
 baidusitemap:
   path: baidusitemap.xml
 
+baidu_url_submit:
+  count: 1000 ## 提交最新的一个链接
+  host: lkc.im ## 在百度站长平台中注册的域名
+  token: oMiWr6CXmAw7LK31 ## 请注意这是您的秘钥， 所以请不要把博客源代码发布在公众仓库里!
+  path: baidu_urls.txt ## 文本文档的地址， 新链接会保存在此文本文档里
+  xz_appid: '1629818761103064' ## 你的熊掌号 appid
+  xz_token: 'cN2rpajYUg5vya2v' ## 你的熊掌号 token
+  xz_count: 10 ## 从所有的提交的数据当中选取最新的10条,该数量跟你的熊掌号而定
+
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
-  type: git
+- type: git
   repo:
     root: root@216.83.44.218:/root/web/www/hexo
+- type: baidu_url_submitter
+- type: baidu_xz_url_submitter
